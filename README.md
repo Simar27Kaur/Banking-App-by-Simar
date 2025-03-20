@@ -1,16 +1,46 @@
-# banking_app
+AI was used minimally in the project, mainly to help simplify the navigation logic (without generating any code, just a small portion, around 5-10%) and to create the README file.
 
-A new Flutter project.
+# Mobile Banking App
 
-## Getting Started
+## Overview
+This is a simple mobile banking application developed using Flutter. It allows users to:
+- View a welcome screen with the bank logo and today's date.
+- Navigate to see a list of accounts.
+- View transaction details for each account.
+- Navigate back from Transactions to Account List and then from Account List to the Welcome page.
 
-This project is a starting point for a Flutter application.
+## Installation
+1. Clone this repository:
+   ```sh
+   git clone <repository_url>
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd banking_app
+   ```
+3. Run the application:
+   ```sh
+   flutter run
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
+```
+- lib/
+  - main.dart  # Main application file (Modified)
+  - screens/
+    - welcome_screen.dart
+    - account_list_screen.dart
+    - transaction_screen.dart
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Changes Made in main.dart
+- Implemented navigation between screens.
+- Used JSON data to populate accounts and transactions.
+- Implemented a simple UI with ListView and Buttons for navigation.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencies
+- No external dependencies used. Flutter SDK is required.
+
+## License
+This project is for educational purposes only.
+
